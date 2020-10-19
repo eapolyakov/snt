@@ -9,21 +9,32 @@ import Stats from "./components/Stats";
 import Clients from "./components/Clients";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
+import Breadcrumbs from "./components/Breadcrumbs";
+import Agents from "./components/Agents";
 
 
 function App() {
   return (<BrowserRouter>
           <Header />
-          <Slider/>
       <div className="main-content">
           <Route exact path="/" render={()=>{
               return <div>
+                  <Slider/>
                   <Welcome/>
                   <Properties/>
                   <Features/>
                   <Stats/>
                   <Clients/>
                   <Newsletter/>
+              </div>
+          }}/>
+          <Route path="about" render={()=>{
+              return <div>
+                  <Breadcrumbs/>
+                  <Welcome/>
+                  <Stats/>
+                  <Agents/>
+
               </div>
           }}/>
       </div>

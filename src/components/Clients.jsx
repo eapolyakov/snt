@@ -5,9 +5,9 @@ import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 import ClientsItem from "./ClientsItem";
 
 export default function Clients(){
-    return  <div className="w3-our-clients">
+    return <div className="w3-our-clients">
         <div className="container">
-            <h3>Our clients</h3>
+            <h3>our clients</h3>
             <OwlCarousel
                 className="owl-theme"
                 items="4"

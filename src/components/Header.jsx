@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 export default function Header() {
     return <div className="container">
@@ -15,26 +16,41 @@ export default function Header() {
                         <span className="icon-bar"></span>
                     </button>
                     <div className="logo">
-                        <h1><a href="index.html">Estate Group</a></h1>
+                        <h1>
+                            <NavLink to="/">Estate Group</NavLink>
+                        </h1>
                     </div>
                 </div>
 
                 { /* Collect the nav links, forms, and other content for toggling*/}
                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul className="nav navbar-nav">
-                        <li className="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="properties.html">Properties</a></li>
+                        <li>
+                            <NavLink to="/">Главная</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/about">О нас</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/properties">Собственность</NavLink>
+                        </li>
                         <li className="dropdown">
-                            <a href="#" className="dropdown-toggle" data-toggle="dropdown">Pages <b
-                                className="caret"></b></a>
+                            <NavLink to="#" className="dropdown-toggle" data-toggle="dropdown">Страницы<b className="caret"></b></NavLink>
                             <ul className="dropdown-menu">
-                                <li><a href="typography.html">Short Codes</a></li>
-                                <li><a href="icons.html">Icons Page</a></li>
+                                <li>
+                                    <NavLink to="typography.html">Short Codes</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="icons.html">Icons Page</NavLink>
+                                </li>
                             </ul>
                         </li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <NavLink to="/blog">Блог</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/contact">Контакты</NavLink>
+                        </li>
                     </ul>
                 </div>
                 { /* /.navbar-collapse*/}

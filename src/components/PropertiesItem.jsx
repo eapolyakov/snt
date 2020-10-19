@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PropertiesItem(){
+export default function PropertiesItem(props){
     return <div className="properties">
             <div className="container">
                 <div className="item">
@@ -10,7 +10,7 @@ export default function PropertiesItem(){
                         <li>
                             <div className="col-md-6 agileits">
                                 <div className="Pro-img-w3ls">
-                                    <img src="images/slide-1.jpg" alt="W3layouts Agileits"/>
+                                    <img src="/images/slide-1.jpg" alt="W3layouts Agileits"/>
                                 </div>
                             </div>
                             <div className="col-md-6 pro-details-w3layouts">
