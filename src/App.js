@@ -11,6 +11,7 @@ import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
 import Breadcrumbs from "./components/Breadcrumbs";
 import Agents from "./components/Agents";
+import AgentsModal from "./components/AgentsModal";
 
 
 function App() {
@@ -28,12 +29,13 @@ function App() {
                   <Newsletter/>
               </div>
           }}/>
-          <Route path="about" render={()=>{
+          <Route path="/about" render={()=>{
               return <div>
                   <Breadcrumbs/>
                   <Welcome/>
                   <Stats/>
                   <Agents/>
+                  <AgentsModal/>
 
               </div>
           }}/>
