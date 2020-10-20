@@ -12,12 +12,14 @@ import Footer from "./components/Footer";
 import Breadcrumbs from "./components/Breadcrumbs";
 import Agents from "./components/Agents";
 import AgentsModal from "./components/AgentsModal";
+import Property from "./components/Property";
+import Blog from "./components/Blog";
+import Contacts from "./components/Contacts";
 
 
 function App() {
   return (<BrowserRouter>
           <Header />
-      <div className="main-content">
           <Route exact path="/" render={()=>{
               return <div>
                   <Slider/>
@@ -36,10 +38,26 @@ function App() {
                   <Stats/>
                   <Agents/>
                   <AgentsModal/>
-
               </div>
           }}/>
-      </div>
+          <Route path="/property" render={()=>{
+              return <div>
+                  <Breadcrumbs/>
+                  <Property/>
+              </div>
+          }}/>
+          <Route path="/blog" render={()=>{
+              return <div>
+                  <Breadcrumbs/>
+                  <Blog/>
+              </div>
+          }}/>
+          <Route path="/contacts" render={()=> {
+              return <div>
+                  <Breadcrumbs/>
+                  <Contacts/>
+              </div>
+          }}/>
           <Footer/>
   </BrowserRouter>
   );

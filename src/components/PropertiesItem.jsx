@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PropertiesItem(props){
+export default function PropertiesItem(){
     return <div className="properties">
             <div className="container">
                 <div className="item">
