@@ -1,27 +1,24 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export default function Welcome(){
     return <div className="welcome-top">
         <div className="container">
             <div className="col-md-6 welcome_top_left">
-                <h3>WELCOME</h3>
-                <h5>TO OUR ESTATE GROUP</h5>
-                <p>Lorem Ipsum is simply dummy printing industry. It has survived not. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently.</p>
+                <span className=""><h3>Бывшая "Снежинка"</h3>
+                <h5>Факел Химик Вишенка</h5></span>
+                <p className="text-justify">До 2012 года наш дачный посёлок был известен как Снежинка, а сейчас представляет собой несколько независимых садовых некомерческих товареществ</p>
             </div>
             <div className="col-md-6 welcome_top_right">
-                <h3>WE'RE OPEN</h3>
-                <h5>In Sed Ut perspiciatis Street</h5>
+                <span className=""><h3>СНТ Металлист</h3>
+                    <h5>Добро пожаловать</h5></span>
                 <div className="welcome_right_location">
                     <div className="location_img">
-                        <img src="images/loc.jpg" alt=""/>
+                        <Link to="/contacts"><img src="images/onmap.webp" alt="onmap"/></Link>
                     </div>
-                    <div className="location">
-                        <p>Lorem Ipsum has been the industry's since the 1500s. It has survived centuries.</p>
-                        <p className="location_text"><span className="glyphicon glyphicon-map-marker"></span>795 Folsom
-                            Ave, Suite 600,San Francisco, CA 94107</p>
-                        <p className="location_text"><span className="glyphicon glyphicon-dashboard"></span>Mon to Sat
-                            8:30am - 4:30pm, Sunday - Holiday</p>
+                    <div className="location text-justify">
+                        <p>Мы расположены в 64 км от центра Москвы по казанскому Ж/Д направлению, недалеко от станции "Кузяево"</p>
+                        <p className="location_text"><Link to="/contacts">140155, садовое некоммерческое товарищество Металлист, Раменский городской округ, Московская область, Россия</Link></p>
                     </div>
                     <div className="clearfix"></div>
                 </div>

@@ -1,14 +1,13 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 export default function Footer(){
     return <div>
         <div className="footer-top">
             <div className="container">
                 <div className="col-md-6 footer-top-left">
-                    <h3><a href="index.html">ESTATE GROUP</a></h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled.</p>
+                    <h3><NavLink to="index.html">СНТ Металлист</NavLink></h3>
+                    <p>Заходите на наши страницы в социальных сетях</p>
                     <ul className="fb_icons2">
                         <li><a className="fb" href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a className="twit" href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -20,28 +19,28 @@ export default function Footer(){
                     </ul>
                 </div>
                 <div className="col-md-3 footer-top-mid">
-                    <h3>Our Company</h3>
+                    <h3>Меню</h3>
                     <ul>
-                        <li><a href="index.html"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a>
+                        <li><NavLink to="/"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Главная</NavLink>
                         </li>
-                        <li><a href="about.html"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>About</a>
+                        <li><NavLink to="/about"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>О нас</NavLink>
                         </li>
-                        <li><a href="properties.html"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Properties</a>
+                        <li><NavLink to="/properties"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Собственность</NavLink>
                         </li>
-                        <li><a href="blog.html"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Blog</a>
+                        <li><NavLink to="/blog"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Блог</NavLink>
                         </li>
-                        <li><a href="contact.html"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Contact</a>
+                        <li><NavLink to="/contacts"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Контакты</NavLink>
                         </li>
                     </ul>
                 </div>
                 <div className="col-md-3 adress-agile">
-                    <h3>Address</h3>
+                    <h3>Адрес</h3>
                     <address>
                         <ul>
-                            <li>Parma Via Modena</li>
-                            <li>40019 Sant'Agata Bolognese</li>
-                            <li>BO, Italy</li>
-                            <li>Telephone : +1 (548) 123-456 7</li>
+                            <li>садовое некоммерческое товарищество Металлист</li>
+                            <li>140155 Раменский городской округ</li>
+                            <li>Московская область, Россия</li>
+                            <li>Телефон : +1 (548) 123-456 7</li>
                             <li>Email : <a className="mail" href="mailto:mail@example.com">info(at)estategroup.com</a>
                             </li>
                         </ul>
@@ -51,8 +50,8 @@ export default function Footer(){
             </div>
         </div>
         <div className="w3layouts-copyright">
-            <p className="footer">&copy; 2016 Estate Group. All Rights Reserved | Design by
-                <a href="http://w3layouts.com/"> W3layouts</a></p>
+            <p className="footer">&copy; 2020 All Rights Reserved | Design by
+                <NavLink to="http://webocrat.ru"> Evgeniy Polyakov</NavLink></p>
         </div>
     </div>
 }
