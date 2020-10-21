@@ -1,23 +1,44 @@
 import React from "react";
+import FeedbackForm from "./FeedbackForm";
+import {Map, YMaps, Placemark, ZoomControl} from 'react-yandex-maps';
+
+const mapState = {
+    center: [55.601762, 38.534680],
+    zoom: 13
+};
 
 export default function Contacts(){
     return <div className="w3layouts-contact-section">
         <div className="container">
             <div className="agileits-contact-main">
                 <div className="col-md-6 w3ls-map">
-                    <p className="loc">Our Location</p>
-
+                    <p className="loc">Наше расположение</p>
+                    <YMaps>
+                        <Map state={mapState} width='100%' height='300px'>
+                            <Placemark
+                                modules={["geoObject.addon.balloon"]}
+                                geometry={[55.601762, 38.534680]}
+                                properties={{
+                                    balloonContentHeader: "СНТ Металлист",
+                                }}
+                            />
+                            <ZoomControl
+                                defaultOptions
+                            />
+                        </Map>
+                    </YMaps>
                 </div>
                 <div className="col-md-6 wthree-contact-in">
-                    <p className="sed-para"> Contact Information</p>
-                    <p className="para1">It is a long established fact that a reader will be distracted by the readable
-                        content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+                    <p className="sed-para">Контактная информация</p>
+                    <p className="para1">Добраться до СНТ Металлист можно на электричке казанского направления, доехав до станции Кузяево.
+                    Или на автомобиле по Егорьевскому шоссе, после деревни "Новохвритоново" повернув налево по указателю "КУЗЯЕВО".</p>
                     <div className="w3-address">
                         <address>
-                            <strong>Estate Group<br/></strong>
-                            13 browne Street, San Francisco<br/>
-                            Co. Estate Group<br/>
-                            <p title="Phone">P:</p> <span>+040 123 456 789, +015 89 58 520 520</span><br/>
+                            <strong>Адрес<br/></strong>
+                            садовое некоммерческое товарищество Металлист<br/>
+                            140155 Раменский городской округ<br/>
+                            Московская область, Россия<br/>
+                            <p title="Phone"><strong>Телефон:</strong></p> <span>+040 123 456 789, +015 89 58 520 520</span><br/>
                         </address>
                         <address>
                             <strong>Email</strong><br/>
@@ -28,32 +49,9 @@ export default function Contacts(){
                 <div className="clearfix"></div>
             </div>
             <div className="agileinfo-contact-bottom">
-                <h3 className="text-center find">Drop Your Message</h3>
-                <p className="contactpara1 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry</p>
-
-                <form action="#" method="get">
-                    <div className="col-md-6 w3layouts-contact-grid">
-                        <p className="your-para">Your Name:</p>
-                        <input type="text" placeholder="" name="your name" required=""/>
-                        <p className="your-para">Your Mail:</p>
-                        <input type="text" placeholder="" name="email" required=""/>
-                        <p className="your-para">Phone:</p>
-                        <input type="text" placeholder="" name="tel" required=""/>
-                        <p className="your-para">Company Name:</p>
-                        <input type="text" placeholder="" name="company name" required=""/>
-                    </div>
-                    <div className="col-md-6 w3layouts-contact-grid">
-                        <p className="your-para">Subject:</p>
-                        <input type="text" placeholder="" name="sub" required=""/>
-                        <p className="your-para">Your Message:</p>
-                        <textarea placeholder="" name="Message" required=""></textarea>
-                        <div className="send">
-                            <input type="submit" value="Send"/>
-                        </div>
-                    </div>
-                    <div className="clearfix"></div>
-                </form>
+                <h3 className="text-center find">Оставьте Ваше сообщение</h3>
+                <p className="contactpara1 text-center">Есть вопросы, предложения отзывы или жалобы?</p>
+                <FeedbackForm/>
             </div>
         </div>
     </div>

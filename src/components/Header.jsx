@@ -28,9 +28,6 @@ export default function Header() {
                         <li>
                             <NavLink to="/about">О нас</NavLink>
                         </li>
-                        <li>
-                            <NavLink to="/property">Собственность</NavLink>
-                        </li>
                         <li className="dropdown">
                             <NavLink to="#" className="dropdown-toggle" data-toggle="dropdown">Документы<b className="caret"></b></NavLink>
                             <ul className="dropdown-menu">
@@ -45,6 +42,10 @@ export default function Header() {
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <NavLink to="/forum">Форум</NavLink>
+                        </li>
+
                         <li>
                             <NavLink to="/blog">Блог</NavLink>
                         </li>

@@ -25,7 +25,7 @@ export default function Footer(){
                         </li>
                         <li><NavLink to="/about"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>О нас</NavLink>
                         </li>
-                        <li><NavLink to="/properties"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Собственность</NavLink>
+                        <li><NavLink to="/property"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Собственность</NavLink>
                         </li>
                         <li><NavLink to="/blog"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Блог</NavLink>
                         </li>

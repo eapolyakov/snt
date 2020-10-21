@@ -5,9 +5,9 @@ export default function AgentsItem(props){
         <div className="hovereffect">
             <img className="img-responsive" src={props.img} alt={props.alt}/>
             <div className="overlay">
-                <h4>{props.name}</h4>
+                <h4>{props.name}<br/><br/>{props.role}</h4>
                 <p>
-                    <a href="#" data-toggle="modal" data-target={props.target}>Contact me</a>
+                    <a href="#" data-toggle="modal" data-target={props.target}>Контакты</a>
                 </p>
             </div>
         </div>
