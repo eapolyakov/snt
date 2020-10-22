@@ -24,10 +24,9 @@ function App() {
               return <div>
                   <Slider/>
                   <Welcome/>
-                  <Properties/>
                   <Features/>
                   <Stats/>
-                  <Clients/>
+
                   <Newsletter/>
               </div>
           }}/>
@@ -35,9 +34,9 @@ function App() {
               return <div>
                   <Breadcrumbs/>
                   <Welcome/>
-                  <Stats/>
                   <Agents/>
                   <AgentsModal/>
+                  <Clients/>
               </div>
           }}/>
           <Route path="/property" render={()=>{

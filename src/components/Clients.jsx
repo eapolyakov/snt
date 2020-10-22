@@ -7,18 +7,18 @@ import ClientsItem from "./ClientsItem";
 export default function Clients(){
     return <div className="w3-our-clients">
         <div className="container">
-            <h3>our clients</h3>
+            <h3>Фотогалерея</h3>
             <OwlCarousel
                 className="owl-theme"
                 items="4"
                 autoplay
                 loop
             >
-                <ClientsItem/>
-                <ClientsItem/>
-                <ClientsItem/>
-                <ClientsItem/>
-                <ClientsItem/>
+                <ClientsItem img="/images/foto_1.jpg"/>
+                <ClientsItem img="/images/foto_2.jpg"/>
+                <ClientsItem img="/images/foto_3.jpg"/>
+                <ClientsItem img="/images/foto_4.jpg"/>
+                <ClientsItem img="/images/foto_5.jpg"/>
             </OwlCarousel>
         </div>
     </div>

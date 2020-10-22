@@ -17,7 +17,7 @@ export default function Agents(){
                 <AgentsItem
                     img="/images/agent-2.jpg"
                     alt="agent2"
-                    name="Иван"
+                    name="Татьяна"
                     role="Бухгалтер"
                     target="#agent2"
                 />

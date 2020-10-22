@@ -32,14 +32,18 @@ export default function Header() {
                             <NavLink to="#" className="dropdown-toggle" data-toggle="dropdown">Документы<b className="caret"></b></NavLink>
                             <ul className="dropdown-menu">
                                 <li>
-                                    <NavLink to="typography.html">Законодательство</NavLink>
-                                </li>
-                                <li>
                                     <NavLink to="icons.html">Решения правления</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="icons.html">Отчёты</NavLink>
+                                    <NavLink to="icons.html">Нормативные акты</NavLink>
                                 </li>
+                                <li>
+                                    <NavLink to="typography.html">Законодательство</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="icons.html">Финансы</NavLink>
+                                </li>
+
                             </ul>
                         </li>
                         <li>

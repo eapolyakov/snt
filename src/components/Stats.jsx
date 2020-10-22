@@ -3,7 +3,7 @@ import React from "react";
 export default function Stats(){
     return <div className="stats">
         <div className="container">
-            <h3>Обзор</h3>
+            <h3>СНТ Металлист это</h3>
             <div className="stats-info">
                 <div className="col-md-4 col-sm-4 stats-grid slideanim">
                     <i className="fa fa-smile-o"></i>
