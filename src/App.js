@@ -15,6 +15,7 @@ import AgentsModal from "./components/AgentsModal";
 import Property from "./components/Property";
 import Blog from "./components/Blog";
 import Contacts from "./components/Contacts";
+import BlogSingle from "./components/BlogSingle";
 
 
 function App() {
@@ -51,12 +52,19 @@ function App() {
                   <Blog/>
               </div>
           }}/>
+          <Route path="/blog/single" render={()=> {
+              return <div>
+                  <Breadcrumbs/>
+                  <BlogSingle/>
+              </div>
+          }}/>
           <Route path="/contacts" render={()=> {
               return <div>
                   <Breadcrumbs/>
                   <Contacts/>
               </div>
           }}/>
+
           <Footer/>
   </BrowserRouter>
   );

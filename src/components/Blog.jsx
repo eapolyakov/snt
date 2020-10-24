@@ -4,6 +4,9 @@ import BlogCategory from "./BlogCategory";
 import BlogArchive from "./BlogArchive";
 import BlogTop from "./BlogTop";
 import BlogTags from "./BlogTags";
+import Breadcrumbs from "./Breadcrumbs";
+import Contacts from "./Contacts";
+import {BrowserRouter, Route} from "react-router-dom";
 
 export default function Blog(){
     return <div className="main-content">
@@ -12,7 +15,7 @@ export default function Blog(){
                     <div className="blog col-md-9">
                         <div className="single-inline">
                             <BlogItem
-                                link="single.html"
+                                link="/blog/single"
                                 img="images/b2.jpg"
                                 alt="b2"
                                 day="12"
@@ -48,7 +51,7 @@ export default function Blog(){
                     </div>
                     <div className="col-md-3 agile-blog-sidebar">
                         <div className="w3l-blog-list">
-                            <h4>Categories</h4>
+                            <h4>Категории</h4>
                             <ul>
                                <BlogCategory
                                    link="#"
@@ -71,7 +74,7 @@ export default function Blog(){
                             <div className="clearfix"></div>
                         </div>
                         <div className="w3l-blog-list">
-                            <h4>Archives List</h4>
+                            <h4>Архив</h4>
                             <ul>
                                 <BlogArchive
                                     year="2018"
@@ -88,7 +91,7 @@ export default function Blog(){
                             </ul>
                         </div>
                         <div className="blog-list1">
-                            <h4>Popular Posts</h4>
+                            <h4>Популярное</h4>
                            <BlogTop
                                link="single.html"
                                img="images/bo1.jpg"
@@ -126,7 +129,7 @@ export default function Blog(){
 
                             />
                         <div className="blog-list2">
-                            <h4>Tags</h4>
+                            <h4>Темы</h4>
                             <ul>
                                <BlogTags   tag="test"/>
                                 <BlogTags  tag="test1"/>
